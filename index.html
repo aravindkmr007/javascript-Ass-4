@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Aravindakumar</title>
+  </head>
+  <body>
+      <nav class="navbar navbar-expand-lg navbar-light bg-primary fixed-top">
+          <a class="navbar-brand">JavaScript Assigment</a>
+          <button class="navbar-toggler" data-target="#my-nav" data-toggle="collapse" aria-controls="my-nav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div id="my-nav" class="collapse navbar-collapse">
+              <ul class="navbar-nav ml-auto">
+                  <li class="nav-item active">
+                      <a class="nav-link" href="#Assignment-1">Assignment-1</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link " href="#">Assignment-2</a>
+                  </li>
+              </ul>
+          </div>
+      </nav>
+      <br><br><br>
+      <section id="Assignment-1" class="mx-auto text-center"  style="position: relative;">
+        <h1>CGPA Calculation</h1>
+        <div>
+          Paper1:<input type="text" onchange="s1()" id="paper1"><br>
+          Paper2:<input type="text" onchange="s1()" id="paper2"><br>
+          Paper4:<input type="text" onchange="s1()" id="paper4"><br>
+          Paper3:<input type="text" onchange="s1()" id="paper3"><br>
+          Paper5:<input type="text" onchange="s1()" id="paper5"><br>
+          Paper6:<input type="text" onchange="s1()" id="paper6"><br>
+        </div>
+          <button onclick="s1()" class="btn btn-primary"> Submit</button> <br>
+        Result: <span id="result"  ></span> <br>
+            
+            
+     </section>
+     <br>
+     <br>
+     <section id="Assignment-2" class="mx-auto text-center">
+         <h1>Out - Patient</h1>
+         <table class="mx-auto text-center">
+             <tr>
+                 <th>Patient Name</th>
+                 <td><input type="text" id="name"></td>
+             </tr>
+             <tr>
+                <th>Patient Age</th>
+                <td><input type="text" id="age"></td>
+            </tr>
+            <tr>
+                <th>Patient Gender</th>
+                <td>
+                    <select id="gender" name="gender" >
+                        <option>Male</option>
+                        <option>Female</option>
+                    </select>
+                </td>
+            </tr>
+             <tr>
+                 <th>Doctor ID:</th>
+                 <td><input type="text" id="docid"> <br></td>
+             </tr>
+             <tr>
+                <th> Fees: </th>
+                <td><input type="text" id="opfee"> <br></td>
+             </tr>
+             <tr>
+                <th>   OP-Number: </th>
+                <td><input type="text" id="op"> <br></td>
+             </tr>
+         </table>
+         <button onclick="out_pat()" class="btn btn-primary"> Submit</button> 
+         <br>
+         Output: <br>
+         <span id="outpat"></span>
+
+     </section>
+     <br> <br>
+     <section class="mx-auto text-center">
+         <div  >
+            <h1>In-Patient</h1>
+            <table class="mx-auto text-center">
+                <tr>
+                    <th>Patient Name</th>
+                    <td><input type="text" id="name1"></td>
+                </tr>
+                <tr>
+                <th>Patient Age</th>
+                <td><input type="text" id="age1"></td>
+            </tr>
+            <tr>
+                <th>Patient Gender</th>
+                <td>
+                    <select id="gender1" name="gender" >
+                        <option>Male</option>
+                        <option>Female</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                    <th>Special Ward or General Ward</th>
+                    <td>
+                        <select id="ward" name="ward" >
+                            <option>General Ward</option>
+                            <option>Special Ward</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th>In-Patient Number</th>
+                    <td><input type="text" id="ipnum"></td>
+                </tr>
+                <tr>
+                    <th>Rent Per Day</th>
+                    <td><input type="text" id="rpd"></td>
+                </tr>
+                <tr>
+                    <th>Fee</th>
+                    <td><input type="text" id="fee"></td>
+                </tr>
+                <tr>
+                    <th>Number Of Days</th>
+                    <td><input type="text" id="NumOfDays"></td>
+                </tr>
+                <tr>
+                    <th>Room  Number for Special Ward</th>
+                    <td><input type="text" id="RoNum"></td>
+                </tr>
+                <tr>
+                    <th>Ebill for Special Ward</th>
+                    <td><input type="text" id="ebill"></td>
+                </tr>
+            </table>
+            <button onclick="in_pat ()" class="btn btn-primary"> Submit</button> 
+        </div>
+        
+
+         Output:
+         <span id="inpat"></span>
+
+     </section>
+    
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
+<!-- 
+    function result(){
+var mypaper1 = ParseInt(document.getElementById("paper1"));
+var mypaper2 = ParseInt(document.getElementById("paper2"));
+var mypaper3 = ParseInt(document.getElementById("paper3"));
+var mypaper4 = ParseInt(document.getElementById("paper4"));
+var mypaper5 = ParseInt(document.getElementById("paper5"));
+var mypaper6 = ParseInt(document.getElementById("paper6"));
+student1 = new Student(mypaper1,mypaper2,mypaper3,mypaper4,mypaper5,mypaper6,4,5);
+cgpa_of_student= student1.cgpa();
+return cgpa_of_student
+}
+console.log(result());
+document.write.getElementById("result").innerhtml = result();
+//
+
+
+student1 = new Student(
+    ParseInt(document.getElementById("paper1")),
+    ParseInt(document.getElementById("paper2")),
+    ParseInt(document.getElementById("paper3")),
+    ParseInt(document.getElementById("paper4")),
+    ParseInt(document.getElementById("paper5")),
+    ParseInt(document.getElementById("paper6")),4,5);
+cgpa_of_student= student1.cgpa();
+document.write.getElementById("result").innerhtml = cgpa_of_student;
+
+
+
+
+
+
+
+
+-->
