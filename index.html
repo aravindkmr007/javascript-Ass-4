@@ -31,12 +31,12 @@
       <section id="Assignment-1" class="mx-auto text-center"  style="position: relative;">
         <h1>CGPA Calculation</h1>
         <div>
-          Paper1:<input type="number" onchange="s1()"  id="paper1"><br>
-          Paper2:<input type="number" onchange="s1()" id="paper2"><br>
-          Paper4:<input type="number" onchange="s1()" id="paper4"><br>
-          Paper3:<input type="number" onchange="s1()" id="paper3"><br>
-          Paper5:<input type="number" onchange="s1()" id="paper5"><br>
-          Paper6:<input type="number" onchange="s1()" id="paper6"><br>
+          Paper1:<input type="number" onchange="s1()"  id="paper1" min="1" max="10"><br>
+          Paper2:<input type="number" onchange="s1()" id="paper2" min="1" max="10"><br>
+          Paper4:<input type="number" onchange="s1()" id="paper4" min="1" max="10"><br>
+          Paper3:<input type="number" onchange="s1()" id="paper3" min="1" max="10"><br>
+          Paper5:<input type="number" onchange="s1()" id="paper5" min="1" max="10"><br>
+          Paper6:<input type="number" onchange="s1()" id="paper6" min="1" max="10"><br>
         </div>
           <button onclick="s1()" class="btn btn-primary"> Submit</button> <br>
         Result: <span id="result"  ></span> <br>
@@ -54,7 +54,7 @@
              </tr>
              <tr>
                 <th>Patient Age</th>
-                <td><input type="text" id="age"></td>
+                <td><input type="number" id="age" min="1" max="150"></td>
             </tr>
             <tr>
                 <th>Patient Gender</th>
@@ -67,15 +67,15 @@
             </tr>
              <tr>
                  <th>Doctor ID:</th>
-                 <td><input type="text" id="docid"> <br></td>
+                 <td><input type="number" min="2001" max="2999" id="docid"> <br></td>
              </tr>
              <tr>
                 <th> Fees: </th>
-                <td><input type="text" id="opfee"> <br></td>
+                <td><input type="number" id="opfee"> <br></td>
              </tr>
              <tr>
                 <th>   OP-Number: </th>
-                <td><input type="text" id="op"> <br></td>
+                <td><input type="number" id="op"> <br></td>
              </tr>
          </table>
          <button onclick="out_pat()" class="btn btn-primary"> Submit</button> 
@@ -95,7 +95,7 @@
                 </tr>
                 <tr>
                 <th>Patient Age</th>
-                <td><input type="text" id="age1"></td>
+                <td><input type="number" id="age1"></td>
             </tr>
             <tr>
                 <th>Patient Gender</th>
@@ -117,27 +117,27 @@
                 </tr>
                 <tr>
                     <th>In-Patient Number</th>
-                    <td><input type="text" id="ipnum"></td>
+                    <td><input type="number" id="ipnum"></td>
                 </tr>
                 <tr>
                     <th>Rent Per Day</th>
-                    <td><input type="text" id="rpd"></td>
+                    <td><input type="number" id="rpd"></td>
                 </tr>
                 <tr>
                     <th>Fee</th>
-                    <td><input type="text" id="fee"></td>
+                    <td><input type="number" id="fee"></td>
                 </tr>
                 <tr>
                     <th>Number Of Days</th>
-                    <td><input type="text" id="NumOfDays"></td>
+                    <td><input type="number" id="NumOfDays"></td>
                 </tr>
                 <tr>
                     <th>Room  Number for Special Ward</th>
-                    <td><input type="text" id="RoNum"></td>
+                    <td><input type="number" id="RoNum"></td>
                 </tr>
                 <tr>
                     <th>Ebill for Special Ward</th>
-                    <td><input type="text" id="ebill"></td>
+                    <td><input type="number" id="ebill"></td>
                 </tr>
             </table>
             <button onclick="in_pat ()" class="btn btn-primary"> Submit</button> 

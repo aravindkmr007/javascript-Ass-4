@@ -134,7 +134,7 @@ function out_pat()
     var id = document.getElementById("docid").value;
     var fees = document.getElementById("opfee").value;
     var Op_num = document.getElementById("op").value;
-    var patient = new Out_Patient(id,fees,Op_num,patientname,patientage,patientgender);
+    var patient = new Out_Patient(Op_num,id,fees,patientname,patientage,patientgender);
     function printObject(o) 
     {
         
